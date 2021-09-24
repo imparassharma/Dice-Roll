@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: #14274E;
+    padding: 20px 0px;
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.links-container{
+    height: auto;
+}
+
+nav{
+    margin-left: -28rem;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+}
+
+nav a:hover
+{
+    color: rgb(233, 81, 81);
+}
+
+.logo img{
+    height: 8vh;
+    width: 60px;
+    margin-left: 2rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+}
+
+.container1{
+    background-color: #1E2022;
+    color:#F0F5F9 ;
+}
+
+.container2{
+    background-color: #F0F5F9;
+    color: #1E2022;
+}
+
+.dice{
+    min-height: 30vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+button{
+    height: 8vh;
+    width: 60px;
+    border-radius: 100px;
+    background-color: rgb(65, 96, 197);
+    color: #F0F5F9;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    margin-left: 40rem;
+}
+
+button:hover
+{
+    background-color: rgb(233, 81, 81);
+}
+
+.count1{
+    display: none;
+}
+
+.count2{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.dice img{
+    width: 15rem;
+    height: 32vh;
+}
+
+.nav-btn{
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head button{
+     margin-left: 4rem;
+    }
+
+    .logo{
+        margin: 0;
+    }
+
+
+    .main{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .dice img {
+        width: 12rem;
+        height: 22vh;
+    }
+
+    .links-container{
+        display: none;
+        height: auto !important;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .nav-btn{
+        display: block;
+        font-size: 32px;
+        color:#F0F5F9;
+        margin-left: 4rem;
+    }
+
+    nav{
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    nav a{
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+}
